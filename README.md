@@ -9,13 +9,13 @@ brew install Popcornnnnnnnn/tap/linkget
 linkget
 ```
 
-macOS only. Homebrew installs Python, gallery-dl, yt-dlp and ffmpeg.
+macOS only. Homebrew installs Python, gallery-dl, yt-dlp, ffmpeg and Deno.
 
 ## Update
 
 ```sh
 brew update
-brew upgrade linkget gallery-dl yt-dlp ffmpeg
+brew upgrade linkget gallery-dl yt-dlp ffmpeg deno
 ```
 
 ## Remove
