@@ -6,9 +6,9 @@ class Linkget < Formula
   sha256 "f20e310c857a21c799c3550ce68dd8384dd9d43e1161f7db665a0941c6ce8275"
   license "MIT"
 
-  depends_on :macos
   depends_on "ffmpeg"
   depends_on "gallery-dl"
+  depends_on :macos
   depends_on "python@3.14"
   depends_on "yt-dlp"
 
