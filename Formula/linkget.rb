@@ -1,9 +1,9 @@
 class Linkget < Formula
   desc "Save post photos and videos to macOS Photos or a folder"
   homepage "https://github.com/Popcornnnnnnnn/linkget"
-  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.2.0b2/linkget-0.2.0b2.tar.gz"
-  version "0.2.0b2"
-  sha256 "9d3e41ca173153abca891478acaef8ca9f11b0ab8fe8f9239baa0f850b65f0e8"
+  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.2.0b3/linkget-0.2.0b3.tar.gz"
+  version "0.2.0b3"
+  sha256 "0f4764df24b2f04f7fc39d89babd6bf756de49d8e742aabeb69f639c3e71fe66"
   license "MIT"
 
   depends_on "deno"
@@ -30,7 +30,7 @@ class Linkget < Formula
   end
 
   test do
-    assert_match "0.2.0b2", shell_output("#{bin}/linkget --version")
+    assert_match "0.2.0b3", shell_output("#{bin}/linkget --version")
     assert_match "Instagram", shell_output("#{bin}/linkget sites")
     assert_match "--folder [FOLDER]", shell_output("#{bin}/linkget help")
     assert_match "Not connected", shell_output("LINKGET_HOME=#{testpath}/data #{bin}/linkget auth")
