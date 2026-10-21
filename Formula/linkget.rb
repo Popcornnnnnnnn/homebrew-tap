@@ -1,9 +1,9 @@
 class Linkget < Formula
   desc "Save post photos and videos to macOS Photos or a folder"
   homepage "https://github.com/Popcornnnnnnnn/linkget"
-  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.2.1.dev20/linkget-0.2.1.dev20.tar.gz"
-  version "0.2.1.dev20"
-  sha256 "69b97b46afba1df89461818c1150ced80747560008ff14025c7d9a25a34254e0"
+  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.2.1.dev22/linkget-0.2.1.dev22.tar.gz"
+  version "0.2.1.dev22"
+  sha256 "864844d3853afd4c849c743639f16f55a957ce20d8eda2f010b6ff1ee2f1012d"
   license "MIT"
 
   depends_on "deno"
@@ -26,13 +26,13 @@ class Linkget < Formula
     <<~EOS
       Run linkget and paste a post link. Use --folder to save to the current folder.
       Use linkget config to view or change your default save destination.
-      Verified Photos imports remove staged copies; failed imports retain originals.
+      Verified owned copies may be cleaned; shared or uncertain originals are retained.
       Uninstalling does not remove your downloads or saved account data.
     EOS
   end
 
   test do
-    assert_match "0.2.1.dev20", shell_output("#{bin}/linkget --version")
+    assert_match "0.2.1.dev22", shell_output("#{bin}/linkget --version")
     assert_match "Instagram", shell_output("#{bin}/linkget sites")
     assert_match "--folder [FOLDER]", shell_output("#{bin}/linkget help")
     assert_match "Public access", shell_output("LINKGET_HOME=#{testpath}/data #{bin}/linkget auth")
