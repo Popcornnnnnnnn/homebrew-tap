@@ -1,8 +1,10 @@
 # Homebrew tap
 
-Personal installation source for [linkget](https://github.com/Popcornnnnnnnn/linkget).
+Personal installation source for [linkget](https://github.com/Popcornnnnnnnn/linkget) and [feishu-grab](https://github.com/Popcornnnnnnnn/feishu-doc-grabber).
 
 ## Install
+
+### linkget
 
 ```sh
 brew install Popcornnnnnnnn/tap/linkget
@@ -11,20 +13,31 @@ linkget
 
 macOS only. Homebrew installs Python, gallery-dl, yt-dlp, ffmpeg and Deno.
 
+### feishu-grab
+
+```sh
+brew install Popcornnnnnnnn/tap/feishu-grab
+feishu-grab
+```
+
+macOS only. Homebrew installs Node.js, the manual page, shell completions, `feishu-grab`, `feishu-grab-mcp`, and `feishu-chrome`.
+
 ## Update
 
 ```sh
 brew update
 brew upgrade linkget gallery-dl yt-dlp ffmpeg deno
+brew upgrade feishu-grab
 ```
 
 ## Remove
 
 ```sh
 brew uninstall linkget
+brew uninstall feishu-grab
 ```
 
-Downloads, Photos items and local account data are retained. Photos originals may be referenced by your library; do not delete them just to uninstall. See [data retention and removal](https://github.com/Popcornnnnnnnn/linkget/blob/main/docs/INSTALL.md).
+For `linkget`: downloads, Photos items and local account data are retained. Photos originals may be referenced by your library; do not delete them just to uninstall. See [data retention and removal](https://github.com/Popcornnnnnnnn/linkget/blob/main/docs/INSTALL.md).
 
 
 <!-- workspace-maintenance:start -->
