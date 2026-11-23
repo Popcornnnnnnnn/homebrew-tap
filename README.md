@@ -7,6 +7,12 @@ Personal installation source for macOS apps and CLI/MCP tools:
 
 ## Install
 
+On Homebrew 7.0+, trust this third-party tap once before installing new formulae or casks (or trust individual packages when prompted):
+
+```sh
+brew trust Popcornnnnnnnn/tap
+```
+
 ### Apps
 
 ```sh
