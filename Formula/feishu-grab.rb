@@ -1,8 +1,8 @@
 class FeishuGrab < Formula
   desc "Export Feishu and Lark documents using your daily Chrome session"
   homepage "https://github.com/Popcornnnnnnnn/feishu-doc-grabber"
-  url "https://github.com/Popcornnnnnnnn/feishu-doc-grabber/archive/refs/tags/v1.4.0.tar.gz"
-  sha256 "6db53928036eb1bcda7751a0feee05fae2f1477695fbbc192a23773b5f1324b3"
+  url "https://github.com/Popcornnnnnnnn/feishu-doc-grabber/archive/refs/tags/v1.4.1.tar.gz"
+  sha256 "664abb285aa145fcb3866f604f8f0b9c04b2b76f888cbbae358380373d7ac407"
   license "ISC"
 
   depends_on :macos
@@ -61,6 +61,7 @@ class FeishuGrab < Formula
   test do
     assert_equal version.to_s, shell_output("#{bin}/feishu-grab --version").strip
     assert_match "Commands:", shell_output("#{bin}/feishu-grab --help")
+    assert_match "upgrade", shell_output("#{bin}/feishu-grab help upgrade")
     assert_match "Export options:", shell_output("#{bin}/feishu-grab help export")
     assert_match "feishu-grab batch", shell_output("#{bin}/feishu-grab batch --help")
     assert_match "feishu-grab retry", shell_output("#{bin}/feishu-grab retry --help")
