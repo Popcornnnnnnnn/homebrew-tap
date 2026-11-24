@@ -1,9 +1,9 @@
 class Linkget < Formula
-  desc "Save post photos and videos to macOS Photos or a folder"
+  desc "Save post photos, videos, audio, and articles to macOS Photos or a folder"
   homepage "https://github.com/Popcornnnnnnnn/linkget"
-  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.3.1/linkget-0.3.1.tar.gz"
-  version "0.3.1"
-  sha256 "9eab2cfdaac62629944b380cac6b4eac3e1a5ee836fef02e194c6c5e8ed38b34"
+  url "https://github.com/Popcornnnnnnnn/linkget/releases/download/v0.3.2/linkget-0.3.2.tar.gz"
+  version "0.3.2"
+  sha256 "064148323ee2b1aeceb1f88739741c0b62de41d8dde38ddbc1b719e39148238f"
   license "MIT"
 
   depends_on "deno"
@@ -32,7 +32,7 @@ class Linkget < Formula
   end
 
   test do
-    assert_match "0.3.1", shell_output("#{bin}/linkget --version")
+    assert_match "0.3.2", shell_output("#{bin}/linkget --version")
     assert_match "upgrade", shell_output("#{bin}/linkget upgrade --help")
     assert_match "Instagram", shell_output("#{bin}/linkget sites")
     assert_match "--folder [FOLDER]", shell_output("#{bin}/linkget help")
