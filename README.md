@@ -1,5 +1,7 @@
 # Homebrew tap
 
+**English** · [简体中文](README.zh-CN.md)
+
 Personal installation source for macOS apps and CLI/MCP tools:
 
 - **Apps (Casks):** [Port Tools](https://github.com/Popcornnnnnnnn/port-tools) (`port-tools`), [WordTail](https://github.com/Popcornnnnnnnn/word-tail) (`wordtail`)
