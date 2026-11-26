@@ -1,8 +1,8 @@
 class WechatMcp < Formula
   desc "Unified macOS WeChat MCP server, SQLCipher 4 decryptor, and history service"
   homepage "https://github.com/Popcornnnnnnnn/wechat-mcp"
-  url "https://github.com/Popcornnnnnnnn/wechat-mcp/releases/download/v0.1.1/wechat_mcp-0.1.1.tar.gz"
-  sha256 "544580dc9899e78d8abd8324dad1c35a5740b4a697dbe96ffd6c92a5c1ba1fef"
+  url "https://github.com/Popcornnnnnnnn/wechat-mcp/releases/download/v0.1.2/wechat_mcp-0.1.2.tar.gz"
+  sha256 "49a9edd12813beab8d00f4057c8910e73bd3a230ee40bb28e318d9185f1a4f03"
   license "GPL-3.0-or-later"
 
   depends_on :macos
@@ -30,7 +30,7 @@ class WechatMcp < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/wechat-mcp --version")
+    assert_match "0.1.2", shell_output("#{bin}/wechat-mcp --version")
     assert_match "upgrade", shell_output("#{bin}/wechat-mcp --help")
   end
 end
