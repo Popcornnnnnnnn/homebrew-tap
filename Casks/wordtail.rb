@@ -1,6 +1,6 @@
 cask "wordtail" do
-  version "0.8.3"
-  sha256 "e3511b9beb4b1c7dc7b9ed2ae4022b8e79c06c3876e213bbf38133e15d59ad4f"
+  version "0.9.1"
+  sha256 "85a25daacce9b00063d57e335ca067621164ab3df71150aacc4ab3042d62e8a0"
 
   url "https://github.com/Popcornnnnnnnn/word-tail/releases/download/v#{version}/WordTail-v#{version}-macOS.zip"
   name "WordTail"
